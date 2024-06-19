@@ -1,0 +1,64 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .score-board {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .score {
+    font-size: 1.5em;
+    padding: 10px;
+  }
+  
+  .blue {
+    color: blue;
+  }
+  
+  .red {
+    color: red;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  
+  .cell.blue {
+    background-color: blue;
+  }
+  
+  .cell.red {
+    background-color: red;
+  }
+  
+  .winner {
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+  
+  .winner button {
+    margin-left: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+  
